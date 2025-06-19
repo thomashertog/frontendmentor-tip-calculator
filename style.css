@@ -140,6 +140,10 @@ fieldset[role="radiogroup"] legend {
             background-color: var(--grey-200);
             color: var(--green-900);
         }
+
+        &.custom-tip{
+            padding: 0;
+        }
     }
 
     & :checked+label {

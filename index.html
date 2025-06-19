@@ -56,10 +56,11 @@
         <input type="radio" name="tip" id="tip-50" value="0.50" class="sr-only">
         <label for="tip-50">50%</label>
         
-        <div class="custom">
+        <input type="radio" name="tip" id="tip-custom" value="custom" class="sr-only">
+        <label for="tip-custom" class="custom-tip">
           <label for="tip-custom-input" class="sr-only">Custom tip %</label>
-          <input type="text" pattern="[0-9]*%" inputmode="numeric" name="tip-custom" id="tip-custom-input" placeholder="Custom">
-        </div>
+          <input type="text" inputmode="numeric" name="tip-custom" id="tip-custom-input" placeholder="Custom">
+        </label>
       </fieldset>
 
       <div class="form-group">
