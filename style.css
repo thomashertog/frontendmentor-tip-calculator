@@ -127,6 +127,11 @@ fieldset[role="radiogroup"] legend {
     padding: 0;
     margin: 0;
 
+    & input:focus + label{
+        background-color: var(--grey-200);
+        color: var(--green-900);
+    }
+
     & label {
         background-color: var(--green-900);
         color: var(--white);
@@ -227,7 +232,7 @@ input {
     flex-grow: 1;
 
     .form-group {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 10ch;
         font-size: 1.5rem;
     }
 
