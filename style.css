@@ -25,10 +25,10 @@
 
 .sr-only {
     position: absolute;
-    width: 1px;
-    height: 1px;
+    width: .01em;
+    height: .01em;
     padding: 0;
-    margin: -1px;
+    margin: -.01em;
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
@@ -51,6 +51,10 @@ header {
     letter-spacing: .5em;
     color: var(--grey-500);
     line-height: 1;
+}
+
+main{
+    display: contents;
 }
 
 form {
@@ -188,7 +192,7 @@ input {
     background-size: .5em;
     background-repeat: no-repeat;
     background-position: left .75em center;
-    border: 2px solid var(--grey-50);
+    border: .125rem solid var(--grey-50);
     font-size: 1.5rem;
     padding: .25em;
     color: var(--green-900);

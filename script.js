@@ -15,7 +15,7 @@ const calculate = function(bill, tip, people) {
     };
 }
 
-const getInfo = function(event){
+function getInfo(event){
     const form = document.getElementById("tip-calculator");
     let tip = new FormData(form).get('tip');
     if(tip === null || tip === 'custom'){
@@ -60,7 +60,7 @@ document.querySelector(('button[type="reset"]')).addEventListener('click', () =>
 
 
 const allInputs = document.querySelectorAll('input');
-for(inputEntry of allInputs){
+for(let inputEntry of allInputs){
     inputEntry.addEventListener('change', (event) => {
         const formData = getInfo(event);
         const result = calculate(formData.bill, formData.tip, formData.people);
